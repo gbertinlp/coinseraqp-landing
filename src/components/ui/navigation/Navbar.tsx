@@ -1,9 +1,13 @@
 import { appPaths } from '@/config/paths';
 import Link from 'next/link';
-import React from 'react'
+import React, { FC } from 'react'
 import { GrLastfm, GrThreeD, GrList, GrActions } from "react-icons/gr";
 
-export const Navbar = () => {
+interface NavbarProps {
+    toggleMenu: () => void;
+}
+
+export const Navbar:FC<NavbarProps> = ({ toggleMenu }) => {
   return (
     <div className='transition-all duration-200 h-[12vh] z-[100] fixed w-full bg-orange-500'>
         <div className='flex items-center h-full justify-between sm:w-[80%] w-[90%] mx-auto'>
@@ -42,7 +46,7 @@ export const Navbar = () => {
                 </Link>
                 {/* Dark Switch Button */}
                 {/* Burger Menu */}
-                <GrList className='w-8 h-8 cursor-pointer text-white lg:hidden'/>
+                <GrList onClick={ toggleMenu } className='w-8 h-8 cursor-pointer text-white lg:hidden'/>
                 <GrActions className='w-8 h-8 cursor-pointer text-white'/>
             </div>
         </div>
