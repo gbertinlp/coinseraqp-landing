@@ -19,7 +19,12 @@ export default function RootLayout({
         className={`${appFont.className} antialiased`}
       >
         <TopMenu />
-        {children}
+        
+        <main>
+          {children}
+        </main>
+
+        {/* Footer */}
       </body>
     </html>
   );

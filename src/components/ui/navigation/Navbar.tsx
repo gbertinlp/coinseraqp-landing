@@ -1,15 +1,38 @@
+'use client';
 import { appPaths } from '@/config/paths';
+import { useUIDarkMode } from '@/store';
 import Link from 'next/link';
-import React, { FC } from 'react'
-import { GrLastfm, GrThreeD, GrList, GrActions } from "react-icons/gr";
+import React, { FC, useEffect, useState } from 'react'
+import { GrLastfm, GrThreeD, GrList, GrEmergency, GrActions } from "react-icons/gr";
 
 interface NavbarProps {
     toggleMenu: () => void;
 }
 
 export const Navbar:FC<NavbarProps> = ({ toggleMenu }) => {
+
+    const { isDarkMode, toggleDarkMode } = useUIDarkMode();
+
+    const [ navBg, setNavBg ] = useState(false);
+
+    useEffect(() => {
+      const handler = () => {
+        if (window.scrollY >= 90) {
+          setNavBg(true);
+        } else {
+          setNavBg(false);
+        }
+      };
+      window.addEventListener('scroll', handler);
+
+      return () => {
+        window.removeEventListener('scroll', handler);
+      };
+    }, []);
+
+
   return (
-    <div className='transition-all duration-200 h-[12vh] z-[100] fixed w-full bg-orange-500'>
+    <div className={`transition-all ${ navBg ? 'bg-orange-500 shadow-md' : 'fixed' } duration-200 h-[12vh] z-[100] fixed w-full`}>
         <div className='flex items-center h-full justify-between sm:w-[80%] w-[90%] mx-auto'>
 
             {/* LOGO */}
@@ -44,10 +67,20 @@ export const Navbar:FC<NavbarProps> = ({ toggleMenu }) => {
                     </span>
                     <span className="pl-4 pr-5 py-2.5">Comprar</span>
                 </Link>
-                {/* Dark Switch Button */}
                 {/* Burger Menu */}
                 <GrList onClick={ toggleMenu } className='w-8 h-8 cursor-pointer text-white lg:hidden'/>
-                <GrActions className='w-8 h-8 cursor-pointer text-white'/>
+                {/* Dark Switch Button */}
+                {
+                    isDarkMode 
+                    ? ( <GrEmergency 
+                        onClick={ toggleDarkMode }
+                        className='w-8 h-8 cursor-pointer text-white'
+                        /> )
+                    : ( <GrActions 
+                        onClick={ toggleDarkMode }
+                        className='w-8 h-8 cursor-pointer text-white'
+                        /> )
+                }
             </div>
         </div>
     </div>
