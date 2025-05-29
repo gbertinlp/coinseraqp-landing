@@ -3,7 +3,7 @@ import { appPaths } from '@/config/paths';
 import { useUIDarkMode } from '@/store';
 import Link from 'next/link';
 import React, { FC, useEffect, useState } from 'react'
-import { GrLastfm, GrThreeD, GrList, GrEmergency, GrActions } from "react-icons/gr";
+import { GrLastfm, GrThreeD, GrList, GrMoon, GrActions } from "react-icons/gr";
 
 interface NavbarProps {
     toggleMenu: () => void;
@@ -17,7 +17,7 @@ export const Navbar:FC<NavbarProps> = ({ toggleMenu }) => {
 
     useEffect(() => {
       const handler = () => {
-        if (window.scrollY >= 90) {
+        if (window.scrollY >= 50) {
           setNavBg(true);
         } else {
           setNavBg(false);
@@ -72,11 +72,11 @@ export const Navbar:FC<NavbarProps> = ({ toggleMenu }) => {
                 {/* Dark Switch Button */}
                 {
                     isDarkMode 
-                    ? ( <GrEmergency 
+                    ? ( <GrActions
                         onClick={ toggleDarkMode }
                         className='w-8 h-8 cursor-pointer text-white'
                         /> )
-                    : ( <GrActions 
+                    : ( <GrMoon 
                         onClick={ toggleDarkMode }
                         className='w-8 h-8 cursor-pointer text-white'
                         /> )
