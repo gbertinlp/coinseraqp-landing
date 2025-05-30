@@ -2,6 +2,7 @@
 import { appPaths } from '@/config/paths';
 import { useUIDarkMode } from '@/store';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import React, { FC, useEffect, useState } from 'react'
 import { GrLastfm, GrThreeD, GrList, GrMoon, GrActions } from "react-icons/gr";
 
@@ -15,24 +16,25 @@ export const Navbar:FC<NavbarProps> = ({ toggleMenu }) => {
 
     const [ navBg, setNavBg ] = useState(false);
 
-    useEffect(() => {
-      const handler = () => {
-        if (window.scrollY >= 50) {
-          setNavBg(true);
-        } else {
-          setNavBg(false);
-        }
-      };
-      window.addEventListener('scroll', handler);
+    // const pathname = usePathname();
 
-      return () => {
-        window.removeEventListener('scroll', handler);
-      };
+    useEffect(() => {
+        const handler = () => {
+            if (window.scrollY >= 50) {
+            setNavBg(true);
+            } else {
+            setNavBg(false);
+            }
+        };
+        window.addEventListener('scroll', handler);
+
+        return () => {
+            window.removeEventListener('scroll', handler);
+        };
     }, []);
 
-
   return (
-    <div className={`transition-all ${ navBg ? 'bg-orange-500 shadow-md' : 'fixed' } duration-200 h-[12vh] z-[100] fixed w-full`}>
+    <div className={`transition-all bg-orange-500 ${ navBg ? 'shadow-md' : 'fixed' } duration-200 h-[12vh] z-[100] fixed w-full`}>
         <div className='flex items-center h-full justify-between sm:w-[80%] w-[90%] mx-auto'>
 
             {/* LOGO */}

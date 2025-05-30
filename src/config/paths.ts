@@ -9,21 +9,21 @@ export const appPaths = [
   {
     id: 2,
     path: '/about',
-    label: 'About'
+    label: 'Empresa'
   },
   {
     id: 3,
-    path: '/products',
-    label: 'Products'
+    path: '/services',
+    label: 'Servicios'
   },
   {
     id: 4,
-    path: '#',
-    label: 'Testimonials'
+    path: '/equipment',
+    label: 'Equipamiento'
   },
   {
     id: 5,
-    path: '/contact',
-    label: 'Contact'
+    path: '/expirience',
+    label: 'Experiencia'
   }
 ]
