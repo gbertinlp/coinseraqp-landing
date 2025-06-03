@@ -9,7 +9,7 @@ interface Props {
 
 export const Features:FC<Props> = ({features}) => {
   return (
-    <div className='pt-16 pb-16'>
+    <div className='py-32 md:py-40'>
 
         {/* Image Content - Carousel - OPTIONAL */}
         <div className='md:px-12 lg:px-24 mx-auto xl:hidden mb-16'>

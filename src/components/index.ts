@@ -1,4 +1,6 @@
 
+// UI
+export * from './ui/carousel/Carousel';
 
 // ResponsiveNav
 export * from './ui/top-menu/TopMenu';
@@ -14,5 +16,5 @@ export * from './features/Features';
 // Strategy
 export * from './strategy/Strategy';
 
-// UI
-export * from './ui/carousel/Carousel';
+// Services
+export * from './services/Services';

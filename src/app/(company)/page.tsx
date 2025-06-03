@@ -1,4 +1,4 @@
-import { Features, Wall } from "@/components";
+import { Features, Services, Wall } from "@/components";
 import { featuresCompany } from "@/config/features";
 
 export default function Home() {
@@ -7,6 +7,7 @@ export default function Home() {
     <div className='overflow-hidden'>
       <Wall />
       <Features features={featuresCompany} />
+      <Services />
     </div>
   );
 }
