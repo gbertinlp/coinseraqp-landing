@@ -18,3 +18,6 @@ export * from './strategy/Strategy';
 
 // Services
 export * from './services/Services';
+
+// Equipment
+export * from './equipment/Equipment';

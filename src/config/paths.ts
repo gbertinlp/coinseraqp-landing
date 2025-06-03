@@ -21,9 +21,9 @@ export const appPaths = [
     path: '/equipment',
     label: 'Equipamiento'
   },
-  {
-    id: 5,
-    path: '/expirience',
-    label: 'Experiencia'
-  }
+  // {
+  //   id: 5,
+  //   path: '/expirience',
+  //   label: 'Experiencia'
+  // }
 ]
