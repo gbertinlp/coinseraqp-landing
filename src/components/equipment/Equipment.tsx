@@ -164,7 +164,7 @@ export const Equipment = () => {
                     </div>
 
                     <Image
-                        src='/images/coinseraqp_strategy_01.png'
+                        src='/images/equipment/coinseraqp-equipment_03.png'
                         width={400}
                         height={400}
                         alt='Quienes-Somos-Coinseraqp'
@@ -220,7 +220,7 @@ export const Equipment = () => {
                     </div>
 
                     <Image
-                        src='/images/coinseraqp_strategy_01.png'
+                        src='/images/equipment/coinseraqp-equipment_04.png'
                         width={400}
                         height={400}
                         alt='Quienes-Somos-Coinseraqp'
@@ -276,7 +276,7 @@ export const Equipment = () => {
                     </div>
 
                     <Image
-                        src='/images/coinseraqp_strategy_01.png'
+                        src='/images/equipment/coinseraqp-equipment_05.png'
                         width={400}
                         height={400}
                         alt='Quienes-Somos-Coinseraqp'

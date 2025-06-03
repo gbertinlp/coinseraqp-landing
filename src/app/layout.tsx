@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { appFont } from "@/config/fonts";
 import { TopMenu } from "@/components";
+import { Footer } from "@/components/ui/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Coinser AQP",
@@ -25,6 +26,7 @@ export default function RootLayout({
         </main>
 
         {/* Footer */}
+        <Footer />
       </body>
     </html>
   );

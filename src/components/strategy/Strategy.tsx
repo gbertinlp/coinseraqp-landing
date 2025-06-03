@@ -62,7 +62,7 @@ export const Strategy = () => {
                     </div>
 
                     <Image
-                        src='/images/coinseraqp_strategy_01.png'
+                        src='/images/coinseraqp_strategy_02.png'
                         width={400}
                         height={400}
                         alt='Quienes-Somos-Coinseraqp'
@@ -154,7 +154,7 @@ export const Strategy = () => {
                     </div>
 
                     <Image
-                        src='/images/coinseraqp_strategy_01.png'
+                        src='/images/coinseraqp_strategy_03.png'
                         width={400}
                         height={400}
                         alt='Quienes-Somos-Coinseraqp'
