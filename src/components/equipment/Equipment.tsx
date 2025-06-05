@@ -138,7 +138,7 @@ export const Equipment = () => {
                         <ul className='list-none space-y-2 ml-6 my-2'>
                             <li className='flex items-center space-x-3'>
                                 <GrLineChart className='text-orange-400' />
-                                <span>Rango 1km+ con precisión 1" angular/2mm+2ppm</span>
+                                <span>Rango 1km+ con precisión 1&quot; angular/2mm+2ppm</span>
                             </li>
                             <li className='flex items-center space-x-3'>
                                 <GrLineChart className='text-orange-400' />

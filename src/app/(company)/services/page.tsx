@@ -11,10 +11,6 @@ export const metadata: Metadata = {
     description: "Dedicados a proveer servicios de Topografía - Geodesia - Batimetría - Fotogrametría y Minería",
   };
 
-interface ServicesPageProps {
-    services : IReview[];
-  }
-
 export default async function Servicespage() {
   const services: IReview[] = ServicesCompany;
 
