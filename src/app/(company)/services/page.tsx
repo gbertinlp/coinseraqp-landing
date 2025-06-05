@@ -1,6 +1,6 @@
 import { ServicesCompany } from '@/config/services';
 import { IReview } from '@/interfaces/review';
-import { GetStaticProps, Metadata } from 'next';
+import { Metadata } from 'next';  
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'

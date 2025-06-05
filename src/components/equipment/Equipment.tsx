@@ -12,7 +12,7 @@ export const Equipment = () => {
                 <div className='bg-gray-100 px-4 md:px-10 py-2 md:py-6 border dark:text-slate-900'>
                     {/* Title */}
                     <h3 className='text-lg md:text-xl font-bold'>
-                    DRONES TOPOGRÁFICOS (DJI M300, Phantom 4 RTK, WingtraOne)
+                        DRONES TOPOGRÁFICOS (DJI M300, Phantom 4 RTK, WingtraOne)
                     </h3>
                     {/* Línea divisoria */}
                     <hr className='my-4 border-t-2 border-gray-200 dark:border-gray-300 mx-auto' />
@@ -44,7 +44,9 @@ export const Equipment = () => {
                 <div className='relative p-6 rounded-xl '>
                     {/* Fondo SVG */}
                     <div className='absolute inset-0 z-0 opacity-20'>
-                        <img 
+                        <Image
+                            width={400}
+                            height={400} 
                             src='/images/background/coinseraqp-bgEquipment_01.svg'
                             className='w-full h-full object-cover md:px-4'
                             alt='Fondo texturizado'
@@ -100,7 +102,9 @@ export const Equipment = () => {
                 <div className='relative p-6 rounded-xl '>
                     {/* Fondo SVG */}
                     <div className='absolute inset-0 z-0 opacity-20'>
-                        <img 
+                        <Image
+                            width={400}
+                            height={400} 
                             src='/images/background/coinseraqp-bgEquipment_01.svg'
                             className='w-full h-full object-cover md:px-4'
                             alt='Fondo texturizado'
@@ -156,7 +160,9 @@ export const Equipment = () => {
                 <div className='relative p-6 rounded-xl '>
                     {/* Fondo SVG */}
                     <div className='absolute inset-0 z-0 opacity-20'>
-                        <img 
+                        <Image
+                            width={400}
+                            height={400} 
                             src='/images/background/coinseraqp-bgEquipment_01.svg'
                             className='w-full h-full object-cover md:px-4'
                             alt='Fondo texturizado'
@@ -212,7 +218,9 @@ export const Equipment = () => {
                 <div className='relative p-6 rounded-xl '>
                     {/* Fondo SVG */}
                     <div className='absolute inset-0 z-0 opacity-20'>
-                        <img 
+                        <Image
+                            width={400}
+                            height={400} 
                             src='/images/background/coinseraqp-bgEquipment_01.svg'
                             className='w-full h-full object-cover md:px-4'
                             alt='Fondo texturizado'
@@ -246,7 +254,7 @@ export const Equipment = () => {
                         <ul className='list-none space-y-2 ml-6 my-2'>
                             <li className='flex items-center space-x-3'>
                                 <GrLineChart className='text-orange-400' />
-                                <span>Precisión 1"-5" con compensador dual eje</span>
+                                <span>Precisión 1&quot;-5&quot; con compensador dual eje</span>
                             </li>
                             <li className='flex items-center space-x-3'>
                                 <GrLineChart className='text-orange-400' />
@@ -268,7 +276,9 @@ export const Equipment = () => {
                 <div className='relative p-6 rounded-xl '>
                     {/* Fondo SVG */}
                     <div className='absolute inset-0 z-0 opacity-20'>
-                        <img 
+                        <Image 
+                            width={400}
+                            height={400}
                             src='/images/background/coinseraqp-bgEquipment_01.svg'
                             className='w-full h-full object-cover md:px-4'
                             alt='Fondo texturizado'

@@ -15,7 +15,9 @@ export const Phrase = () => {
         {/* Fondo SVG */}
         <div className='relative'>
             <div className='absolute inset-0 z-0'>
-                <img 
+                <Image 
+                    width={400}
+                    height={400}
                     src='/images/background/coinseraqp-bgCeoprofile_01.svg'
                     className='w-full h-full object-contain'
                     alt='Fondo texturizado'
@@ -38,7 +40,7 @@ export const Phrase = () => {
             </h3>
             {/* Description */}
             <p className='text-sm font-medium text-slate-800 dark:text-gray-100 text-center'>
-                "Como Gerente General de CoinserAQP, les aseguro que no hay desafío topográfico, geodésico o minero que no podamos resolver. Contamos con la tecnología más avanzada del mercado para entregar resultados exactos, rápidos y con validez legal. 
+                &quot;Como Gerente General de CoinserAQP, les aseguro que no hay desafío topográfico, geodésico o minero que no podamos resolver. Contamos con la tecnología más avanzada del mercado para entregar resultados exactos, rápidos y con validez legal.&quot;
             </p>
             {/* Buttons */}
             <div className='mt-8 flex justify-start space-y-4 sm:space-y-0'>

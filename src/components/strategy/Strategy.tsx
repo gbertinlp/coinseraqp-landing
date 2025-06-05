@@ -29,7 +29,9 @@ export const Strategy = () => {
                 <div className='relative p-6 mx-6 rounded-xl '>
                     {/* Fondo SVG */}
                     <div className='absolute inset-0 z-0 opacity-50'>
-                        <img 
+                        <Image 
+                            width={400}
+                            height={400}
                             src='/images/background/coinseraqp-bgAbout_01.svg'
                             className='w-full h-full object-cover'
                             alt='Fondo texturizado'
@@ -54,7 +56,9 @@ export const Strategy = () => {
                 <div className='relative p-6 mx-6 rounded-xl '>
                     {/* Fondo SVG */}
                     <div className='absolute inset-0 z-0 opacity-50'>
-                        <img 
+                        <Image
+                            width={400}
+                            height={400} 
                             src='/images/background/coinseraqp-bgAbout_01.svg'
                             className='w-full h-full object-cover'
                             alt='Fondo texturizado'
@@ -146,7 +150,9 @@ export const Strategy = () => {
                 <div className='relative p-6 mx-6 rounded-xl '>
                     {/* Fondo SVG */}
                     <div className='absolute inset-0 z-0 opacity-50'>
-                        <img 
+                        <Image
+                            width={400}
+                            height={400} 
                             src='/images/background/coinseraqp-bgAbout_01.svg'
                             className='w-full h-full object-cover'
                             alt='Fondo texturizado'

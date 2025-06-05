@@ -1,6 +1,5 @@
 'use client';
 import { appPaths } from '@/config/paths';
-import { useUIStore } from '@/store';
 import clsx from 'clsx';
 import Image from 'next/image';
 import Link from 'next/link';

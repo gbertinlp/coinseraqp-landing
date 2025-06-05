@@ -3,9 +3,9 @@ import { appPaths } from '@/config/paths';
 import { useUIDarkMode } from '@/store';
 import Image from 'next/image';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+// import { usePathname } from 'next/navigation';
 import React, { FC, useEffect, useState } from 'react'
-import { GrLastfm, GrThreeD, GrList, GrMoon, GrActions } from "react-icons/gr";
+import { GrThreeD, GrList, GrMoon, GrActions } from "react-icons/gr";
 
 interface NavbarProps {
     toggleMenu: () => void;
