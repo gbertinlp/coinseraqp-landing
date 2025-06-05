@@ -28,7 +28,7 @@ export const Strategy = () => {
                 {/* Image Content */}
                 <div className='relative p-6 mx-6 rounded-xl '>
                     {/* Fondo SVG */}
-                    <div className='absolute inset-0 z-0 opacity-20'>
+                    <div className='absolute inset-0 z-0 opacity-50'>
                         <img 
                             src='/images/background/coinseraqp-bgAbout_01.svg'
                             className='w-full h-full object-cover'
@@ -53,7 +53,7 @@ export const Strategy = () => {
                 {/* Image Content */}
                 <div className='relative p-6 mx-6 rounded-xl '>
                     {/* Fondo SVG */}
-                    <div className='absolute inset-0 z-0 opacity-20'>
+                    <div className='absolute inset-0 z-0 opacity-50'>
                         <img 
                             src='/images/background/coinseraqp-bgAbout_01.svg'
                             className='w-full h-full object-cover'
@@ -145,7 +145,7 @@ export const Strategy = () => {
                 {/* Image Content */}
                 <div className='relative p-6 mx-6 rounded-xl '>
                     {/* Fondo SVG */}
-                    <div className='absolute inset-0 z-0 opacity-20'>
+                    <div className='absolute inset-0 z-0 opacity-50'>
                         <img 
                             src='/images/background/coinseraqp-bgAbout_01.svg'
                             className='w-full h-full object-cover'

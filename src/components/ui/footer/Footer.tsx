@@ -1,3 +1,5 @@
+import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react'
 import { RiFacebookCircleFill, RiTiktokFill, RiInstagramFill, RiYoutubeFill } from "react-icons/ri";
 
@@ -7,7 +9,16 @@ export const Footer = () => {
         <div className='w-[80%] mx-auto items-start grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10'>
             {/* 1st Part */}
             <div>
-                <div className='text-white font-bold text-3xl'>lOGO</div>
+                {/* LOGO */}
+                <Link href='/' className='flex items-center space-x-2'>
+                    <Image
+                        src='/images/coinseraqp-logo_only.svg'
+                        width={150}
+                        height={150}
+                        alt='Logo Coinseraqp'
+                        className='bg-white rounded-md px-2'
+                    />
+                </Link>
                 <p className='mt-5 font-semibold text-gray-200 text-sm'>
                     Dedicados a proveer servicios de Topografía - Geodesia - Batimetría - Fotogrametría y Minería
                 </p>

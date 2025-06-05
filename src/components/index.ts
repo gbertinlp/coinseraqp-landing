@@ -1,6 +1,7 @@
 
 // UI
 export * from './ui/carousel/Carousel';
+export * from './ui/phrase/Phrase';
 
 // ResponsiveNav
 export * from './ui/top-menu/TopMenu';

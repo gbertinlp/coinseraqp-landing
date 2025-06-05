@@ -1,4 +1,4 @@
-import { Features, Services, Wall } from "@/components";
+import { Features, Phrase, Services, Wall } from "@/components";
 import { featuresCompany } from "@/config/features";
 
 export default function Home() {
@@ -8,6 +8,7 @@ export default function Home() {
       <Wall />
       <Features features={featuresCompany} />
       <Services />
+      <Phrase />
     </div>
   );
 }

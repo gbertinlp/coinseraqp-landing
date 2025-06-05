@@ -2,6 +2,7 @@
 import { appPaths } from '@/config/paths';
 import { useUIStore } from '@/store';
 import clsx from 'clsx';
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { FC } from 'react';
 import { GrPrevious } from "react-icons/gr";
@@ -37,11 +38,22 @@ export const NavMobile: FC<NavMobileProps> = ({ isOpenMenu, toggleMenu}) => {
                     }
                 )
             }>
+                {/* LOGO */}
+                <Link href='/' className='flex items-center mx-auto mb-20'>
+                    <Image
+                        src='/images/coinseraqp-logo_only.svg'
+                        width={150}
+                        height={150}
+                        alt='Logo Coinseraqp'
+                        className='bg-white rounded-md px-2'
+                    />
+                </Link>
             {
                 appPaths.map((link) => {
                     return(
                     <Link
                         key={link.id}
+                        onClick={ toggleMenu }
                         href={link.path}
                         className='w-fit text-xl ml-12 hover:border-b-[1.5px] hover:border-white sm:text-[30px]'
                     >
