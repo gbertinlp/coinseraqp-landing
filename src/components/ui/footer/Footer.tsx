@@ -54,7 +54,7 @@ export const Footer = () => {
                 <h3 className='text-lg text-white font-bold'>Aquí</h3>
                 <div className='mt-6'>
                     <h3 className='text-sm text-white'>Nuestros números de contacto:</h3>
-                    <p className='font-bold text-white mt-1'>+51994 4660 3</p>
+                    <p className='font-bold text-white mt-1'>+51 966 377 037</p>
                 </div>
                 <div className='mt-6'>
                     <h3 className='text-sm text-white'>Ubícanos:</h3>
@@ -63,6 +63,10 @@ export const Footer = () => {
                 <div className='mt-6'>
                     <h3 className='text-sm text-white'>Escríbenos al:</h3>
                     <p className='font-bold text-white mt-1'>email.coinseraqpsac2@gmail.com</p>
+                </div>
+                <div className='mt-6'>
+                    <h3 className='text-sm text-white'>RUC:</h3>
+                    <p className='font-bold text-white mt-1'>20611856220</p>
                 </div>
             </div>
 
